@@ -95,6 +95,22 @@ Open a PR, Person 1 merges into main. Never push directly to main.
 - If your changes aren't showing, recompile and restart the extension host (Shift+F5 → F5)
 - Test your file with hardcoded fake data — you don't need the full pipeline to work on your piece
 
+## Types
+
+Everyone imports from `src/types.ts`. Do not redefine these anywhere else.
+
+- **Person 1** — uses both `LineContext` and `Suggestion` in `extension.ts`
+- **Person 2** — returns a `LineContext` from `getLineContext()`
+- **Person 3** — receives a `LineContext` in `explainLine()`
+- **Person 4** — receives a `LineContext`, returns a `Suggestion` in `getSuggestion()`
+- **Person 5** — receives a `Suggestion` in `showSuggestion()`
+
+Example:
+
+```typescript
+import { LineContext, Suggestion } from "./types";
+```
+
 ## Release Notes
 
 Users appreciate release notes as you update your extension.
