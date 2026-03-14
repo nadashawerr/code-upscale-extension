@@ -6,21 +6,22 @@
     <td style="background-color: #1a1a1a; border: none; padding-left: 25px;">
       <h1>LOOM: Auto-Refactor & Upskill</h1>
       <p>
-        <img src="https://img.shields.io/badge/Publisher-Loom--Team-007ACC?style=flat-square" alt="Publisher">
-        <img src="https://img.shields.io/badge/Installs-2.1M-44cc11?style=flat-square" alt="Installs">
-        <img src="https://img.shields.io/badge/Rating-★★★★★-ff8c00?style=flat-square" alt="Rating">
+              <img src="https://img.shields.io/badge/Organization-BCIT%20Computing%20Club-003E6B?style=flat-square" alt="Organization">
+<img src="https://img.shields.io/badge/Publisher-Upscale%20Team-2ea44f?style=flat-square" alt="Publisher">
+        <img src="https://img.shields.io/badge/Project-HackTheBreak--2026-800000?style=flat-square" alt="Event">
    </p>
 <p>
         ᴛʜᴇ sᴏғᴛᴡᴀʀᴇ ɪɴᴅᴜsᴛʀʏ ᴍᴏᴠᴇs ғᴀsᴛ. ᴅᴏɴ'ᴛ ɢᴇᴛ ʟᴇғᴛ ʙᴇʜɪɴᴅ. ʟᴏᴏᴍ ᴇᴠᴏʟᴠᴇs ʏᴏᴜʀ ʟᴇɢᴀᴄʏ ʟᴏɢɪᴄ ɪɴᴛᴏ ғᴜᴛᴜʀᴇ-ᴘʀᴏᴏғ ᴀʀᴄʜɪᴛᴇᴄᴛᴜʀᴇ, ᴇɴsᴜʀɪɴɢ ʏᴏᴜʀ ᴄᴏᴅᴇ ɪs ᴀs ᴍᴏᴅᴇʀɴ ᴀs ʏᴏᴜʀ ɪᴅᴇᴀs.
       </p>
       <p>
-        <img src="https://img.shields.io/badge/Powered%20By-ivan%20|%20Bareera%20|%20Lac%20|%20nada%20|%20Winston-6e5494?style=for-the-badge&logo=github&logoColor=white" alt="Team Members">
+        <img src="https://img.shields.io/badge/Powered%20By-ivan%20|%20Bareera%20|%20Zyllian%20|%20nada%20|%20Winston-6e5494?style=for-the-badge&logo=github&logoColor=white" alt="Team Members">
       </p>
     </td>
   </tr>
 </table>
 
 ---
+
 # Upscale
 
 EDIT AS YOU GO
@@ -43,7 +44,7 @@ For example if there is an image subfolder under your extension project workspac
 
 - [Node.js](https://nodejs.org/) v18+ — check with `node -v`
 - [VS Code](https://code.visualstudio.com/)
-- An Anthropic API key — get one at [console.anthropic.com](https://console.anthropic.com)
+- An LLM API key (TBD) — get one at [console.anthropic.com](https://console.anthropic.com)
 
 ### Clone and Install
 

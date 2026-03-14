@@ -18,14 +18,14 @@ export function showWarningWithActions() {
 	console.log('UI Active');
 
 	// Template Notification for Now
-	const showWarning = vscode.commands.registerCommand('upscale-team.showWarningWithActions', 
-		async () => { 		
-		const selection = await vscode.window.showWarningMessage('Outdated code deteced. Refactor?', 'Yes', 'No');
+	// const showWarning = vscode.commands.registerCommand('upscale-team.showWarningWithActions', 
+	// 	async () => { 		
+	// 	const selection = await vscode.window.showWarningMessage('Outdated code deteced. Refactor?', 'Yes', 'No');
 
-		if (selection !== undefined) {
-			console.log(`User selected: ${selection}`);
-		}	
+	// 	if (selection !== undefined) {
+	// 		console.log(`User selected: ${selection}`);
+	// 	}	
 
-    });
+    // });
 
 }
