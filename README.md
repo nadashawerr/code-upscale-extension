@@ -1,6 +1,8 @@
-# upscale README
+# Upscale
 
-This is the README for your extension "upscale-team". After writing up a brief description, we recommend including the following sections.
+EDIT AS YOU GO
+
+Highlight a line of code. Get an instant suggestion to improve it. Apply it in one click.
 
 ## Features
 
@@ -12,24 +14,86 @@ For example if there is an image subfolder under your extension project workspac
 
 > Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
-## Requirements
+## Team Setup (Read This First)
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+### Prerequisites
 
-## Extension Settings
+- [Node.js](https://nodejs.org/) v18+ — check with `node -v`
+- [VS Code](https://code.visualstudio.com/)
+- An Anthropic API key — get one at [console.anthropic.com](https://console.anthropic.com)
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+### Clone and Install
 
-For example:
+```bash
+git clone https://github.com/nadashawerr/code-upscale-extension.git
+cd code-upscale-extension
+npm install
+```
 
-This extension contributes the following settings:
+### Compile
 
-- `myExtension.enable`: Enable/disable this extension.
-- `myExtension.thing`: Set to `blah` to do something.
+```bash
+- npm run compile
+```
 
-## Known Issues
+### Run the Extension
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+Press **F5** in VS Code (or **fn + F5** on Mac if F5 doesn't work).
+
+This opens a second VS Code window called the **Extension Development Host**. Your extension is live in that window. Test everything in there, not in your main window.
+
+To stop it: **Shift + F5**, or just close the second window.
+
+### Configure the Extension
+
+In the Extension Development Host window:
+
+1. Open **Settings** (`Cmd+,` on Mac / `Ctrl+,` on Windows)
+2. Search for **Upscale**
+3. Fill in:
+
+| Setting            | What to put                                                 |
+| ------------------ | ----------------------------------------------------------- |
+| `upscale.apiKey`   | Your Anthropic API key                                      |
+| `upscale.docsUrl`  | URL of the docs to reference (e.g. `https://hono.dev/docs`) |
+| `upscale.docsText` | Or paste docs content directly if no URL                    |
+
+---
+
+## Project Structure
+
+Each person owns one file. Don't edit someone else's file without checking with them first.
+
+```bash
+src/
+├── extension.ts      # Person 1 — entry point, wires everything together
+├── types.ts          # Person 1 — shared interfaces, everyone imports from here
+├── lineContext.ts    # Person 2 — grabs the highlighted line and surrounding context
+├── docs.ts           # Person 3 — loads documentation from URL or pasted text
+├── llm.ts            # Person 4 — calls the Anthropic API, parses the response
+└── ui.ts             # Person 5 — displays the suggestion, handles Apply/Copy/Dismiss
+```
+
+---
+
+## Git Workflow
+
+```bash
+git checkout -b yourname/feature
+git add .
+git commit -m "feat: what you did"
+git push origin yourname/feature
+```
+
+Open a PR, Person 1 merges into main. Never push directly to main.
+
+---
+
+## Heads Up
+
+- Run `npm run compile` after every change, or use `npm run watch` to auto-compile on save
+- If your changes aren't showing, recompile and restart the extension host (Shift+F5 → F5)
+- Test your file with hardcoded fake data — you don't need the full pipeline to work on your piece
 
 ## Release Notes
 
@@ -37,35 +101,4 @@ Users appreciate release notes as you update your extension.
 
 ### 1.0.0
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-- [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-- Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-- Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-- Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-- [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-- [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Initial release of Upscale
