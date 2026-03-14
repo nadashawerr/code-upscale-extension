@@ -14,22 +14,14 @@
   "contributes": {
     "commands": [
       {
-        "command": "upscale-team.helloWorld",
-        "title": "Hello World"
-      },
-      {
-        "command": "upscale-team.suggest",
-        "title": "Suggest"
+        "command": "upscale-team.upscale",
+        "title": "Upscale"
       }
     ],
     "menus": {
       "editor/context": [
         {
-          "command": "upscale-team.helloWorld",
-          "group": "navigation"
-        },
-        {
-          "command": "upscale-team.suggest",
+          "command": "upscale-team.upscale",
           "group": "navigation"
         }
       ]
