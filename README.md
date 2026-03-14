@@ -1,3 +1,26 @@
+<table width="100%">
+  <tr>
+    <td align="center" width="200" style="background-color: #1a1a1a; border: none; border-radius: 12px;">
+      <img src="Screenshot/image1.png" width="180" alt="LOOM Logo" style="border-radius: 10px;">
+    </td>
+    <td style="background-color: #1a1a1a; border: none; padding-left: 25px;">
+      <h1>LOOM: Auto-Refactor & Upskill</h1>
+      <p>
+        <img src="https://img.shields.io/badge/Publisher-Loom--Team-007ACC?style=flat-square" alt="Publisher">
+        <img src="https://img.shields.io/badge/Installs-2.1M-44cc11?style=flat-square" alt="Installs">
+        <img src="https://img.shields.io/badge/Rating-★★★★★-ff8c00?style=flat-square" alt="Rating">
+   </p>
+<p>
+        ᴛʜᴇ sᴏғᴛᴡᴀʀᴇ ɪɴᴅᴜsᴛʀʏ ᴍᴏᴠᴇs ғᴀsᴛ. ᴅᴏɴ'ᴛ ɢᴇᴛ ʟᴇғᴛ ʙᴇʜɪɴᴅ. ʟᴏᴏᴍ ᴇᴠᴏʟᴠᴇs ʏᴏᴜʀ ʟᴇɢᴀᴄʏ ʟᴏɢɪᴄ ɪɴᴛᴏ ғᴜᴛᴜʀᴇ-ᴘʀᴏᴏғ ᴀʀᴄʜɪᴛᴇᴄᴛᴜʀᴇ, ᴇɴsᴜʀɪɴɢ ʏᴏᴜʀ ᴄᴏᴅᴇ ɪs ᴀs ᴍᴏᴅᴇʀɴ ᴀs ʏᴏᴜʀ ɪᴅᴇᴀs.
+      </p>
+      <p>
+        <img src="https://img.shields.io/badge/Powered%20By-ivan%20|%20Bareera%20|%20Lac%20|%20nada%20|%20Winston-6e5494?style=for-the-badge&logo=github&logoColor=white" alt="Team Members">
+      </p>
+    </td>
+  </tr>
+</table>
+
+---
 # Upscale
 
 EDIT AS YOU GO
