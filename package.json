@@ -16,6 +16,10 @@
       {
         "command": "upscale-team.helloWorld",
         "title": "Hello World"
+      },
+      {
+        "command": "upscale-team.suggest",
+        "title": "Suggest"
       }
     ]
   },
