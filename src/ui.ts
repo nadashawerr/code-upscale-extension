@@ -23,7 +23,7 @@ export function showWarningWithActions() {
 		const selection = await vscode.window.showWarningMessage('Outdated code deteced. Refactor?', 'Yes', 'No');
 
 		if (selection !== undefined) {
-			vscode.window.showInformationMessage(`You selected: ${selection}`, { modal: true });
+			console.log(`User selected: ${selection}`);
 		}	
 
     });
