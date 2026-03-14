@@ -21,6 +21,7 @@
 </table>
 
 ---
+
 # Upscale
 
 EDIT AS YOU GO
@@ -43,7 +44,7 @@ For example if there is an image subfolder under your extension project workspac
 
 - [Node.js](https://nodejs.org/) v18+ — check with `node -v`
 - [VS Code](https://code.visualstudio.com/)
-- An Anthropic API key — get one at [console.anthropic.com](https://console.anthropic.com)
+- An LLM API key (TBD) — get one at [console.anthropic.com](https://console.anthropic.com)
 
 ### Clone and Install
 
