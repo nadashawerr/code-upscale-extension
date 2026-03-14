@@ -1,39 +1,42 @@
-// Bringing in the official Google AI brain
+// Import the Google Generative AI library to interact with Gemini models
 import { GoogleGenerativeAI } from "@google/generative-ai";
-// Importing the tool that lets us read secret keys from  private .env file
+// Import dotenv to securely load environment variables from the .env file
 import * as dotenv from 'dotenv';
 
-// Running the command to  load those secret keys into the project
+// Load secret keys from the .env file into process.env
 dotenv.config(); 
 
 /**
- * This class is the "Brain" of extension.
- * It's what talks to Gemini and gets the smart suggestions back.
+ * LoomAI is the main "brain" of the extension.
+ * It communicates with Gemini to provide smart code suggestions.
  */
 export class LoomAI {
-    // Creating placeholders for  AI connection and the specific model we use
+    // Placeholder for the AI connection
     private genAI: GoogleGenerativeAI;
+    // Placeholder for the specific Gemini model we use
     private model: any;
 
     constructor() {
+        // Get the API key from environment variables
         const apiKey = process.env.GEMINI_API_KEY; 
         
-        // If the key isn't there,stop everything and tell the developer why?
+        // If the key is missing, stop everything and show an error
         if (!apiKey) {
             throw new Error("Missing API Key! Did you forget the .env file?");
         }
 
-        // Setting up the connection to Google using secret key
+        // Connect to Google Generative AI using the API key
         this.genAI = new GoogleGenerativeAI(apiKey);
         // Specifically picking "Gemini 1.5 Flash" because it is fast and efficient for coding
         this.model = this.genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
     }
 
     /**
-     * This is the main function. It takes messy code and sends back the "Glow Up" version.
+     * This is the main function. 
+     * Refactor messy code and return an improved version.
      */
     async refactorCode(originalCode: string, language: string): Promise<string> {
-        // This is the "Secret Instruction" we send to the AI so it knows how to act
+        // Instructions we send to the AI for refactoring
         const prompt = `
             You are a Senior Platform Engineer and Architect specializing in ${language}.
             Your goal is to "Upskill" the following code. 
@@ -49,13 +52,12 @@ export class LoomAI {
         `;
 
         try {
-            // Asking the AI to process our prompt and waiting for it to finish "thinking"
+            // Ask the AI to process the prompt and wait for a response
             const result = await this.model.generateContent(prompt);
             const response = await result.response;
             const text = response.text();
             
-            // Sometimes AI adds ``` backticks to its answer; this line "strips" those away 
-            // so we only get the clean, usable code back for the editor.
+            // Remove any ``` backticks if the AI adds them
             return text.replace(/```[a-z]*\n([\s\S]*?)\n```/g, '$1').trim();
             
         } catch (error: any) {
