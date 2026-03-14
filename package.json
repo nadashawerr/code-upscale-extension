@@ -21,7 +21,19 @@
         "command": "upscale-team.suggest",
         "title": "Suggest"
       }
-    ]
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "upscale-team.helloWorld",
+          "group": "navigation"
+        },
+        {
+          "command": "upscale-team.suggest",
+          "group": "navigation"
+        }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
