@@ -1,12 +1,6 @@
 // Import the Google Generative AI library to interact with Gemini models
 import { GoogleGenerativeAI } from "@google/generative-ai";
-import * as path from "path";
-import * as dotenv from "dotenv";
-
-dotenv.config({ path: path.join(__dirname, "..", ".env") });
-
-// Load the secret keys from the .env file into process.env
-dotenv.config(); 
+import * as vscode from "vscode";
 
 /**
  * Upscale is the main "brain" of the extension.
@@ -19,12 +13,14 @@ export class Upscale {
   private model: any;
 
   constructor() {
-    // Get the API key from environment variables
-    const apiKey = process.env.GEMINI_API_KEY;
+    const apiKey = vscode.workspace
+      .getConfiguration("upscale-team")
+      .get<string>("geminiApiKey");
 
-    // If the key is missing, stop everything and show an error
     if (!apiKey) {
-      throw new Error("Missing API Key! Did you forget the .env file?");
+      throw new Error(
+        "No Gemini API key found. Go to Settings and search 'Upscale'.",
+      );
     }
 
     // Connect to Google Generative AI using the API key
