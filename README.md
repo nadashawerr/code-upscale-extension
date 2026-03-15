@@ -24,17 +24,7 @@
 
 # Upscale
 
-Highlight a line of code. Get an instant suggestion to improve it. Apply it in one click.
-
-## Features
-
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+Highlight a line of code. Get an instant suggestion to improve it.
 
 ## Team Setup (Read This First)
 
@@ -74,11 +64,9 @@ In the Extension Development Host window:
 2. Search for **Upscale**
 3. Fill in:
 
-| Setting            | What to put                                                 |
-| ------------------ | ----------------------------------------------------------- |
-| `upscale.apiKey`   | Your Anthropic API key                                      |
-| `upscale.docsUrl`  | URL of the docs to reference (e.g. `https://hono.dev/docs`) |
-| `upscale.docsText` | Or paste docs content directly if no URL                    |
+| Setting                        | What to put         |
+| ------------------------------ | ------------------- |
+| `Upscale-team: Gemini Api Key` | Your Gemini API key |
 
 ---
 
@@ -88,12 +76,11 @@ Each person owns one file. Don't edit someone else's file without checking with 
 
 ```bash
 src/
-├── extension.ts      # Person 1 — entry point, wires everything together
-├── types.ts          # Person 1 — shared interfaces, everyone imports from here
-├── lineContext.ts    # Person 2 — grabs the highlighted line and surrounding context
-├── docs.ts           # Person 3 — loads documentation from URL or pasted text
-├── llm.ts            # Person 4 — calls the Anthropic API, parses the response
-└── ui.ts             # Person 5 — displays the suggestion, handles Apply/Copy/Dismiss
+├── extension.ts
+├── types.ts
+├── lineContext.ts
+├── llm.ts
+└── ui.ts
 ```
 
 ---
@@ -134,8 +121,6 @@ import { LineContext, Suggestion } from "./types";
 ```
 
 ## Release Notes
-
-Users appreciate release notes as you update your extension.
 
 ### 1.0.0
 
