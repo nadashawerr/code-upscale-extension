@@ -42,12 +42,11 @@ export class Upscale {
             You are a Senior Platform Engineer and Architect specializing in ${language}.
             ${frameworkDocs ? `Use these specific framework standards for context:\n${frameworkDocs}` : ""}
 
-            Your goal is to "Upskill" the following code. 
-            Instructions:
-            1. Refactor the code for better performance and readability using ${language} best practices.
-            2. Use modern 2026 industry standards and tools.
-            3. Add a single comment at the top summarizing the architectural improvement.
-            4. Only return the code itself—no conversational filler.
+            Goal: "Upscale" the code below.
+            Rules:
+            1. Refactor for performance, readability, and 2026 industry standards.
+            2. Add ONLY a single-line comment at the top explaining the improvement.
+            3. Return ONLY the code. No conversational filler.
 
             Code to Refactor (${language}):
             ${originalCode}
