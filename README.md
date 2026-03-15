@@ -21,6 +21,7 @@
     </td>
   </tr>
 </table>
+
 <h1 align="center">
   <font face="Segoe UI, Helvetica, Arial, sans-serif">𝖴𝗉𝗌𝖼𝖺𝗅𝖾 𝖯𝗋𝖾𝗏𝗂𝖾𝗐</font>
 </h1>
@@ -29,10 +30,10 @@
   <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" width="100%">
 </p>
 
-<table width="50%" border="0" cellspacing="0" cellpadding="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td align="center" style="background-color: #0d1117; border: 0.5px solid #30363d; border-radius: 12px; padding: 40px 0;">
-        <img src="images/upscalepreview.png" width="85%" alt="Click to Preview" style="border-radius: 10px; border: 2px solid #58a6ff; box-shadow: 0 20px 50px rgba(0,0,0,0.7);">
+        <img src="images/upscalepreview.png" width="85%" alt="Upscale Preview" style="border-radius: 10px; border: 2px solid #58a6ff; box-shadow: 0 20px 50px rgba(0,0,0,0.7);">
     </td>
   </tr>
 </table>
@@ -41,20 +42,15 @@
   <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" width="100%">
 </p>
 
-
-
-<<<<<<< HEAD
-
->>>>>>> 5327d95 (Added the preview image)
-
+---
 ## 🛠 What is Upscale?
-=======
-Upscale is a VS Code extension designed to bridge the gap between "functional" code and "architectural" excellence. Unlike generic AI tools, Upscale analyzes your code context and applies specific 2026 industry standards to refactor your logic into cleaner, faster, and more maintainable snippets.
+
+Upscale is a VS Code extension designed to bridge the gap between "functional" code and "architectural" excellence. Unlike generic AI tools, Upscale analyzes your code selection and applies specific 2026 industry standards to refactor your logic into cleaner, faster, and more maintainable snippets.
 
 ### Key Features
-* **Context-Aware Refactoring**: Uses a 7-line context window (3 lines before/after) to understand exactly where your code fits in the file.
-* **Architectural Personas**: Every refactor is performed by a "Senior Platform Engineer" persona, focusing on performance and scalability.
-* **Dynamic Knowledge Base**: Uses a custom `docs.ts` provider to inject framework-specific standards directly into the AI's logic.
+* **Smart Context Analysis**: Captures highlighted code and language metadata to provide the AI with precise situational awareness.
+* **Architectural Personas**: Every refactor is performed by a specialized Senior Architect persona, focusing on performance, scalability, and modern syntax.
+* **Dynamic Knowledge Base**: Uses a custom `docs.ts` provider to inject framework-specific standards (like Hono) directly into the AI's logic.
 
 ---
 ## 🖼 Screenshots & Demo
@@ -63,17 +59,17 @@ Upscale is a VS Code extension designed to bridge the gap between "functional" c
 Simply highlight the code block you want to "Upskill". Right-click and select **Upscale** from the navigation menu.
 
 ### 2. AI Processing
-The extension captures the code, surrounding lines, and language ID to send to the Gemini 2.5 Flash model.
+The extension captures the code and language ID to send to the **Gemini 1.5 Flash** model for high-speed architectural analysis.
 
 ### 3. Modernized Output
-Receive an instant notification containing the refactored code, complete with architectural comments and modern syntax.
+Receive an instant notification containing the refactored code, complete with a single architectural comment and optimized syntax.
 
 ---
 ## 🏗 How It Works
 
 1. **Selection**: Highlight a messy code block or just click a line.
-2. **Context Extraction**: The extension gathers the language ID and surrounding code to provide the AI with full visibility.
-3. **Refactor Engine**: Our `llm.ts` core communicates with **Gemini 2.5 Flash** to process the architectural "Upscale".
+2. **Context Extraction**: The extension gathers the language ID and current text selection for the AI.
+3. **Refactor Engine**: Our `llm.ts` core communicates with the Gemini API to process the architectural "Upscale".
 4. **Instant Delivery**: Optimized code is returned instantly as a VS Code notification.
 
 ---
@@ -86,8 +82,8 @@ Receive an instant notification containing the refactored code, complete with ar
 ### Installation & Setup
 1. Clone this repository into your local environment.
 2. Run `npm install` to set up dependencies like `@google/generative-ai`.
-3. Run `npm run compile` to build the extension into the `out` directory.
-4. Launch the extension with `F5` to open the Extension Development Host.
+3. Run `npm run compile` to build the extension.
+4. Launch the extension with `F5`.
 5. Open **Settings** (`Cmd+,`), search for **"Upscale"**, and paste your API key.
 
 ---
