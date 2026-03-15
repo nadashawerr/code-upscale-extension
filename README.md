@@ -11,7 +11,7 @@
         <img src="https://img.shields.io/badge/Project-HackTheBreak--2026-800000?style=flat-square" alt="Event">
    </p>
 <p>
-    Upscale helps you polish and modernize your work as you go, making sure your code is as sharp as your ideas.
+  𝖴𝗉𝗌𝖼𝖺𝗅𝖾 𝗁𝖾𝗅𝗉𝗌 𝗒𝗈𝗎 𝗉𝗈𝗅𝗂𝗌𝗁 𝖺𝗇𝖽 𝗆𝗈𝖽𝖾𝗋𝗇𝗂𝗓𝖾 𝗒𝗈𝗎𝗋 𝗐𝗈𝗋𝗄 𝖺𝗌 𝗒𝗈𝗎 𝗀𝗈, 𝗆𝖺𝗄𝗂𝗇𝗀 𝗌𝗎𝗋𝖾 𝗒𝗈𝗎𝗋 𝖼𝗈𝖽𝖾 𝗂𝗌 𝖺𝗌 𝗌𝗁𝖺𝗋𝗉 𝖺𝗌 𝗒𝗈𝗎𝗋 𝗂𝖽𝖾𝖺𝗌.
       </p>
       <p>
         <img src="https://img.shields.io/badge/Powered%20By-ivan%20|%20Bareera%20|%20Zyllian%20|%20nada%20|%20Winston-6e5494?style=for-the-badge&logo=github&logoColor=white" alt="Team Members">
