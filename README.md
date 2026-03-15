@@ -11,7 +11,7 @@
         <img src="https://img.shields.io/badge/Project-HackTheBreak--2026-800000?style=flat-square" alt="Event">
    </p>
 <p>
-        ᴛʜᴇ sᴏғᴛᴡᴀʀᴇ ɪɴᴅᴜsᴛʀʏ ᴍᴏᴠᴇs ғᴀsᴛ. ᴅᴏɴ'ᴛ ɢᴇᴛ ʟᴇғᴛ ʙᴇʜɪɴᴅ. ʟᴏᴏᴍ ᴇᴠᴏʟᴠᴇs ʏᴏᴜʀ ʟᴇɢᴀᴄʏ ʟᴏɢɪᴄ ɪɴᴛᴏ ғᴜᴛᴜʀᴇ-ᴘʀᴏᴏғ ᴀʀᴄʜɪᴛᴇᴄᴛᴜʀᴇ, ᴇɴsᴜʀɪɴɢ ʏᴏᴜʀ ᴄᴏᴅᴇ ɪs ᴀs ᴍᴏᴅᴇʀɴ ᴀs ʏᴏᴜʀ ɪᴅᴇᴀs.
+    Upscale helps you polish and modernize your work as you go, making sure your code is as sharp as your ideas.
       </p>
       <p>
         <img src="https://img.shields.io/badge/Powered%20By-ivan%20|%20Bareera%20|%20Zyllian%20|%20nada%20|%20Winston-6e5494?style=for-the-badge&logo=github&logoColor=white" alt="Team Members">
