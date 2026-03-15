@@ -1,4 +1,4 @@
-# 🚀 Upscale: The Code Modernizer & Enhancer
+# 🚀 Upscale - A VS Code Extension
 
 <table width="100%">
   <tr>
@@ -23,45 +23,27 @@
 </table>
 
 ## 🖥️ Upscale Preview
-<p align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" width="100%">
-</p>
 
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-  <tr>
-    <td align="center" style="background-color: #0d1117; border: 0.5px solid #30363d; border-radius: 12px; padding: 40px 0;">
-        <img src="images/upscalepreview.png" width="85%" alt="Upscale Preview" style="border-radius: 10px; border: 2px solid #58a6ff; box-shadow: 0 20px 50px rgba(0,0,0,0.7);">
-    </td>
-  </tr>
-</table>
+Simply highlight the code block you want to "Upskill". Right-click and select **Upscale** from the navigation menu:
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" width="100%">
+  <img src="images/upscale-preview.png">
 </p>
 
 ---
+
 ## 🛠 What is Upscale?
 
 Upscale is a VS Code extension designed to bridge the gap between "functional" code and "architectural" excellence. Unlike generic AI tools, Upscale analyzes your code selection and applies specific 2026 industry standards to refactor your logic into cleaner, faster, and more maintainable snippets.
 
 ### Key Features
-* **Smart Context Analysis**: Captures highlighted code and language metadata to provide the AI with precise situational awareness.
-* **Architectural Personas**: Every refactor is performed by a specialized Senior Architect persona, focusing on performance, scalability, and modern syntax.
-* **Dynamic Knowledge Base**: Uses a custom `docs.ts` provider to inject framework-specific standards (like Hono) directly into the AI's logic.
+
+- **Smart Context Analysis**: Captures highlighted code and language metadata to provide the AI with precise situational awareness.
+- **Architectural Personas**: Every refactor is performed by a specialized Senior Architect persona, focusing on performance, scalability, and modern syntax.
+- **Dynamic Knowledge Base**: Uses a custom `docs.ts` provider to inject framework-specific standards (like Hono) directly into the AI's logic.
 
 ---
-## 🖼 Screenshots & Demo
 
-### 1. Highlight & Trigger
-Simply highlight the code block you want to "Upskill". Right-click and select **Upscale** from the navigation menu.
-
-### 2. AI Processing
-The extension captures the code and language ID to send to the **Gemini 1.5 Flash** model for high-speed architectural analysis.
-
-### 3. Modernized Output
-Receive an instant notification containing the refactored code, complete with a single architectural comment and optimized syntax.
-
----
 ## 🏗 How It Works
 
 1. **Selection**: Highlight a messy code block or just click a line.
@@ -70,13 +52,16 @@ Receive an instant notification containing the refactored code, complete with a 
 4. **Instant Delivery**: Optimized code is returned instantly as a VS Code notification.
 
 ---
+
 ## 🚀 Getting Started
 
 ### Prerequisites
-* VS Code version `^1.110.0`.
-* A Gemini API Key (get one for free at [Google AI Studio](https://aistudio.google.com)).
+
+- VS Code version `^1.110.0`.
+- A Gemini API Key (get one for free at [Google AI Studio](https://aistudio.google.com)).
 
 ### Installation & Setup
+
 1. Clone this repository into your local environment.
 2. Run `npm install` to set up dependencies like `@google/generative-ai`.
 3. Run `npm run compile` to build the extension.
@@ -84,6 +69,7 @@ Receive an instant notification containing the refactored code, complete with a 
 5. Open **Settings** (`Cmd+,`), search for **"Upscale"**, and paste your API key.
 
 ---
+
 ## 📂 Project Structure
 
 ```text
@@ -96,3 +82,4 @@ Receive an instant notification containing the refactored code, complete with a 
 │   ├── docs.ts           # Local documentation provider
 │   └── types.ts          # Shared TypeScript interfaces
 └── package.json          # Extension configuration & metadata
+```

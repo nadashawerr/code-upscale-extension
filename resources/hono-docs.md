@@ -19,4 +19,4 @@
 
 ## Documentation
 
-- **JSDoc**: Include a concise JSDoc comment for complex logic summarizing the "why" behind the code, not just the "what."
+- **Documentation**: Use a single-line // comment at the top for complex logic; avoid multi-line JSDoc blocks to keep output concise.
