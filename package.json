@@ -1,17 +1,20 @@
 {
   "name": "upscale-team",
   "displayName": "Upscale",
+  "publisher": "upscale-team",
   "description": "Highlight a line of code and get an instant suggestion based on your own docs.",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nadashawerr/code-upscale-extension"
+  },
   "engines": {
     "vscode": "^1.110.0"
   },
   "categories": [
     "Other"
   ],
-  "activationEvents": [
-    "*"
-  ],
+  "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
     "configuration": {
