@@ -4,7 +4,7 @@
       <img src="Screenshot/image1.png" width="180" alt="LOOM Logo" style="border-radius: 10px;">
     </td>
     <td style="background-color: #1a1a1a; border: none; padding-left: 25px;">
-      <h1>LOOM: Auto-Refactor & Upskill</h1>
+      <h1>Upscale: Auto-Refactor & Upskill</h1>
       <p>
               <img src="https://img.shields.io/badge/Organization-BCIT%20Computing%20Club-003E6B?style=flat-square" alt="Organization">
 <img src="https://img.shields.io/badge/Publisher-Upscale%20Team-2ea44f?style=flat-square" alt="Publisher">
@@ -23,8 +23,6 @@
 ---
 
 # Upscale
-
-EDIT AS YOU GO
 
 Highlight a line of code. Get an instant suggestion to improve it. Apply it in one click.
 
