@@ -1,27 +1,27 @@
-import * as vscode from 'vscode';
-import { Suggestion } from "./types";
-import { getLineContext } from './lineContext';
+import * as vscode from "vscode";
 
-const code = getLineContext();
+export function promptRefactor(result: string) {
+  const panel = vscode.window.createWebviewPanel(
+    "upscaleResult",
+    "Upscale Result",
+    vscode.ViewColumn.Beside,
+    {},
+  );
 
-export function promptRefactor() {
+  panel.webview.html = `
+    <!DOCTYPE html>
+    <html>
+      <body style="font-family: monospace; padding: 20px; background: #1e1e1e; color: #d4d4d4;">
+        <h2 style="color: #9cdcfe;">⚡ Upscaled Code</h2>
+        <pre style="background: #252526; padding: 16px; border-radius: 8px; overflow: auto;">${escapeHtml(result)}</pre>
+      </body>
+    </html>
+  `;
+}
 
-	// Checks if UI works
-	console.log('UI Active');
-
-
-	// Prompts the user if they want to refactor their code
-	const promptRefactor = vscode.commands.registerCommand('upscale-team.promptRefactor', 
-		async () => { 		
-		const selection = await vscode.window.showWarningMessage('Outdated code detected. Refactor?', 'Yes', 'No');
-
-		if (selection !== undefined) {
-			console.log(`User selected: ${selection}`);
-			if (selection == `Yes`) {
-				console.log(`Refactoring code...`);
-			}
-		}	
-
-    });
-
+function escapeHtml(text: string): string {
+  return text
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
 }

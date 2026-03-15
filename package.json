@@ -29,14 +29,6 @@
     },
     "commands": [
       {
-        "command": "upscale-team.helloWorld",
-        "title": "Hello World"
-      },
-      {
-        "command": "upscale-team.promptRefactor",
-        "title": "Refactor"
-      },
-      {
         "command": "upscale-team.upscale",
         "title": "Upscale"
       }
