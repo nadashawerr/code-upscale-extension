@@ -22,10 +22,7 @@
   </tr>
 </table>
 
-<h1 align="center">
-  <font face="Segoe UI, Helvetica, Arial, sans-serif">𝖴𝗉𝗌𝖼𝖺𝗅𝖾 𝖯𝗋𝖾𝗏𝗂𝖾𝗐</font>
-</h1>
-
+## 🖥️ Upscale Preview
 <p align="center">
   <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" width="100%">
 </p>
