@@ -38,4 +38,9 @@ export function getLineContext(): LineContext | undefined {
         fileName: document.fileName.split(/[\\/]/).pop() || document.fileName
     };
     return result;
+
+    
+    // Exports the user's highlighted code
+    exports.fileName = document.fileName;
+
 }
