@@ -3,7 +3,7 @@
   "displayName": "Upscale",
   "publisher": "upscale-team",
   "icon": "images/logo.png",
-  "description": "Highlight a line of code and get an instant suggestion based on your own docs.",
+  "description": "Highlight a line of code. Get an instant suggestion to improve it.",
   "version": "0.0.2",
   "repository": {
     "type": "git",
