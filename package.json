@@ -20,8 +20,20 @@
       {
         "command": "upscale-team.showWarningWithActions",
         "title": "Test"
+      },
+      {
+        "command": "upscale-team.upscale",
+        "title": "Upscale"
       }
-    ]
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "upscale-team.upscale",
+          "group": "navigation"
+        }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
