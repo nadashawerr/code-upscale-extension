@@ -1,7 +1,9 @@
 // Import the Google Generative AI library to interact with Gemini models
 import { GoogleGenerativeAI } from "@google/generative-ai";
-// Import dotenv to securely load environment variables from the .env file
+import * as path from "path";
 import * as dotenv from "dotenv";
+
+dotenv.config({ path: path.join(__dirname, "..", ".env") });
 
 // Load secret keys from the .env file into process.env
 dotenv.config();
@@ -27,8 +29,8 @@ export class Upscale {
 
     // Connect to Google Generative AI using the API key
     this.genAI = new GoogleGenerativeAI(apiKey);
-    // Specifically picking "Gemini 1.5 Flash" because it is fast and efficient for coding
-    this.model = this.genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    // 2.5 Flash for higher limits
+    this.model = this.genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
   }
 
   /**
@@ -61,7 +63,7 @@ export class Upscale {
       return text.replace(/```[a-z]*\n([\s\S]*?)\n```/g, "$1").trim();
     } catch (error: any) {
       // If the internet dies or the API key is wrong, log the error here
-      console.error("Loom AI Error:", error);
+      console.error("Upscale Error:", error);
       throw new Error(`Gemini failed to think: ${error.message}`);
     }
   }
