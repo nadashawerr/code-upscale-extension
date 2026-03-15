@@ -1,7 +1,7 @@
 <table width="100%">
   <tr>
     <td align="center" width="200" style="background-color: #1a1a1a; border: none; border-radius: 12px;">
-      <img src="Screenshot/image2.png" width="180" alt="LOOM Logo" style="border-radius: 10px;">
+      <img src="images/logo.png" width="180" alt="LOOM Logo" style="border-radius: 10px;">
     </td>
     <td style="background-color: #1a1a1a; border: none; padding-left: 25px;">
       <h1>Upscale: Auto-Refactor & Upskill</h1>
