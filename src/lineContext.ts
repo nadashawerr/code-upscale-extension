@@ -38,4 +38,5 @@ export function getLineContext(): LineContext | undefined {
         fileName: document.fileName.split(/[\\/]/).pop() || document.fileName
     };
     return result;
+
 }
