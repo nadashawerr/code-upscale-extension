@@ -21,10 +21,34 @@
     </td>
   </tr>
 </table>
+<h1 align="center">
+  <font face="Segoe UI, Helvetica, Arial, sans-serif">𝖴𝗉𝗌𝖼𝖺𝗅𝖾 𝖯𝗋𝖾𝗏𝗂𝖾𝗐</font>
+</h1>
 
----
+<p align="center">
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" width="100%">
+</p>
+
+<table width="50%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center" style="background-color: #0d1117; border: 0.5px solid #30363d; border-radius: 12px; padding: 40px 0;">
+        <img src="images/upscalepreview.png" width="85%" alt="Click to Preview" style="border-radius: 10px; border: 2px solid #58a6ff; box-shadow: 0 20px 50px rgba(0,0,0,0.7);">
+    </td>
+  </tr>
+</table>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" width="100%">
+</p>
+
+
+
+<<<<<<< HEAD
+
+>>>>>>> 5327d95 (Added the preview image)
+
 ## 🛠 What is Upscale?
-
+=======
 Upscale is a VS Code extension designed to bridge the gap between "functional" code and "architectural" excellence. Unlike generic AI tools, Upscale analyzes your code context and applies specific 2026 industry standards to refactor your logic into cleaner, faster, and more maintainable snippets.
 
 ### Key Features
