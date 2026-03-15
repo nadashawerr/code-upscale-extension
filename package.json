@@ -23,7 +23,7 @@
       "properties": {
         "upscale-team.geminiApiKey": {
           "type": "string",
-          "description": "Your Gemini API key from https://aistudio.google.com"
+          "description": "Your Gemini API key from https://aistudio.google.com/api-keys"
         }
       }
     },
