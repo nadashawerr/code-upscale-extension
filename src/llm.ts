@@ -3,7 +3,7 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 // Import dotenv to securely load environment variables from the .env file
 import * as dotenv from 'dotenv';
 
-// Load secret keys from the .env file into process.env
+// Load the secret keys from the .env file into process.env
 dotenv.config(); 
 
 /**
