@@ -24,7 +24,8 @@ export function activate(context: vscode.ExtensionContext) {
       if (!ctx) return;
 
       const result = await upscale.refactorCode(ctx.line, ctx.language);
-      promptRefactor(result);
+      const original = ctx.line;
+      promptRefactor(result, original);
     },
   );
 
