@@ -2,9 +2,7 @@
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from "vscode";
 import { getLineContext } from "./lineContext";
-
-// Imports from other typescript files
-import { showWarningWithActions } from './ui';
+import { promptRefactor } from './ui';
 
 // This method is called when your extension is activated
 // Your extension is activated the very first time the command is executed
@@ -35,14 +33,13 @@ export function activate(context: vscode.ExtensionContext) {
 		vscode.window.showInformationMessage('Hello World from Upscale!');
 		
 	});
-
 	
-	showWarningWithActions();
-
+	promptRefactor();
 	
 	context.subscriptions.push(disposable);
   	context.subscriptions.push(suggest);
 }
+
 
 // This method is called when your extension is deactivated
 export function deactivate() {}

@@ -18,8 +18,8 @@
         "title": "Hello World"
       },
       {
-        "command": "upscale-team.showWarningWithActions",
-        "title": "Test"
+        "command": "upscale-team.promptRefactor",
+        "title": "Refactor"
       },
       {
         "command": "upscale-team.upscale",

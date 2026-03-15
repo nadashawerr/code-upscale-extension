@@ -39,8 +39,4 @@ export function getLineContext(): LineContext | undefined {
     };
     return result;
 
-    
-    // Exports the user's highlighted code
-    exports.fileName = document.fileName;
-
 }
