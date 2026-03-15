@@ -5,8 +5,8 @@ import * as dotenv from "dotenv";
 
 dotenv.config({ path: path.join(__dirname, "..", ".env") });
 
-// Load secret keys from the .env file into process.env
-dotenv.config();
+// Load the secret keys from the .env file into process.env
+dotenv.config(); 
 
 /**
  * Upscale is the main "brain" of the extension.
