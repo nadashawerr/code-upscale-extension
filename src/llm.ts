@@ -1,6 +1,7 @@
 // Import the Google Generative AI library to interact with Gemini models
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import * as vscode from "vscode";
+import { DocProvider } from "./docs";
 
 /**
  * Upscale is the main "brain" of the extension.
@@ -34,11 +35,14 @@ export class Upscale {
    * Refactor messy code and return an improved version.
    */
   async refactorCode(originalCode: string, language: string): Promise<string> {
+        // 1. Fetch the specialized documentation (the "Cheat Sheet")
+    const frameworkDocs = await DocProvider.getFrameworkDocs(language);
     // Instructions we send to the AI for refactoring
     const prompt = `
             You are a Senior Platform Engineer and Architect specializing in ${language}.
-            Your goal is to "Upskill" the following code. 
+            ${frameworkDocs ? `Use these specific framework standards for context:\n${frameworkDocs}` : ""}
 
+            Your goal is to "Upskill" the following code. 
             Instructions:
             1. Refactor the code for better performance and readability using ${language} best practices.
             2. Use modern 2026 industry standards and tools.
