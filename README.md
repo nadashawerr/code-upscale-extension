@@ -2,10 +2,10 @@
 
 <table width="100%">
   <tr>
-    <td align="center" width="200" style="background-color: #1a1a1a; border: none; border-radius: 12px;">
+    <td align="center" width="200" style="background-color: #1a1a1a23; border: none; border-radius: 12px;">
       <img src="images/logo.png" width="180" alt="Upscale Logo" style="border-radius: 10px;">
     </td>
-    <td style="background-color: #1a1a1a; border: none; padding-left: 25px;">
+    <td style="background-color: #1a1a1a23; border: none; padding-left: 25px;">
       <h1>Upscale: Auto-Refactor & Upskill</h1>
       <p>
         <img src="https://img.shields.io/badge/Organization-BCIT%20Computing%20Club-003E6B?style=flat-square" alt="Organization">
