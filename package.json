@@ -1,7 +1,7 @@
 {
   "name": "upscale-team",
   "displayName": "Upscale",
-  "publisher": "upscale-team",
+  "publisher": "bareeraleghari",
   "icon": "images/logo.png",
   "description": "Highlight a line of code. Get an instant suggestion to improve it.",
   "version": "0.0.6",
@@ -64,3 +64,4 @@
     "@google/generative-ai": "^0.24.1"
   }
 }
+

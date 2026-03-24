@@ -2,7 +2,6 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import * as vscode from "vscode";
 import { DocProvider } from "./docs";
-
 /**
  * Upscale is the main "brain" of the extension.
  * It communicates with Gemini to provide smart code suggestions.
